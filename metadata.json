@@ -1,0 +1,6 @@
+{
+  "name": "Hồ sơ số Chợ phiên H'Mông Sin Suối Hồ",
+  "description": "Hồ sơ số hóa di sản văn hóa Chợ phiên cộng đồng người H'Mông tại xã Sin Suối Hồ, huyện Phong Thổ, tỉnh Lai Châu. Tra cứu không gian văn hóa, ẩm thực, trang phục và người gìn giữ di sản.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
