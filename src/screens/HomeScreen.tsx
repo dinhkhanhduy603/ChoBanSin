@@ -51,7 +51,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
     },
     {
       title: 'Ẩm thực Thắng cố ngựa',
-      native: 'Kuô cháo / Kuô cháo ngựa',
+      native: 'thắng cố',
       desc: 'Nấu trong chảo gang lớn cùng 12 loại thảo mộc núi rừng Sin Suối Hồ, thơm nồng ngây ngất.',
       category: 'am_thuc' as const,
       icon: <Utensils className="w-5 h-5 text-orange-500" />,
@@ -59,7 +59,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
     },
     {
       title: 'Váy lanh vẽ sáp ong',
-      native: 'Keng hmongz / Kha tà',
+      native: 'Tiab / Tiab Hmoob',
       desc: 'Sợi lanh tự nhiên vẽ họa tiết kỷ hà bằng sáp ong rừng, nhuộm chàm nhiều lần công phu.',
       category: 'trang_phuc' as const,
       icon: <Shirt className="w-5 h-5 text-indigo-500" />,
@@ -67,7 +67,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
     },
     {
       title: 'Điệu Khèn gọi bạn tình',
-      native: 'Keng H\'Mông / Thổ Keng',
+      native: 'Qeej / Kềnh',
       desc: 'Tiếng khèn 6 ống trúc réo rắt ngân vang cùng những bước múa điêu luyện giữa hội chợ.',
       category: 'nghe_thuat' as const,
       icon: <Music className="w-5 h-5 text-emerald-500" />,
@@ -85,18 +85,18 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
     'Khèn H\'Mông',
     'Ném Pa Pao',
     'Đánh Tù Lu',
-    'Hảng A Xà',
+    'Vàng A Chỉnh',
   ];
 
   const glossaryItems = [
-    { native: 'Hảng tỳ Sin Suối Hồ', meaning: 'Chợ phiên trung tâm bản Sin Suối Hồ' },
-    { native: 'Kuô cháo', meaning: 'Món Thắng cố ngựa truyền thống nấu thảo mộc' },
-    { native: 'Mảng gâu (Mảng gấu)', meaning: 'Cơm ngô mèn mén hấp hai lần lửa' },
-    { native: 'Pê pấu (Pê-pâu)', meaning: 'Bánh dày nếp nương giã tay gói lá chuối rừng' },
-    { native: 'Lê khâu (Dê khâu)', meaning: 'Rượu ngô nương ủ men lá thảo dược' },
-    { native: 'Keng hmongz', meaning: 'Váy lanh thổ cẩm xếp nếp nhuộm chàm thêu sáp ong' },
-    { native: 'Keng', meaning: 'Cây Khèn bè 6 ống trúc linh thiêng của người H\'Mông' },
-    { native: 'Hắt xơ la', meaning: 'Nghệ thuật ngậm lá rừng thổi điệu giao duyên' },
+    { native: 'Kiab khw', meaning: 'Chợ phiên trung tâm bản Sin Suối Hồ' },
+    { native: 'thắng cố', meaning: 'Món Thắng cố ngựa truyền thống nấu thảo mộc' },
+    { native: 'Mov pob kws', meaning: 'Cơm ngô mèn mén hấp hai lần lửa' },
+    { native: 'Ncuav', meaning: 'Bánh dày nếp nương giã tay gói lá chuối rừng' },
+    { native: 'Cawv', meaning: 'Rượu ngô nương ủ men lá thảo dược' },
+    { native: 'Tiab / Tiab Hmoob', meaning: 'Váy lanh thổ cẩm xếp nếp nhuộm chàm vẽ sáp ong' },
+    { native: 'Qeej / Kềnh', meaning: 'Cây Khèn bè 6 ống trúc linh thiêng của người H\'Mông' },
+    { native: 'Tshuab nplooj', meaning: 'Nghệ thuật ngậm lá rừng thổi điệu giao duyên' },
     { native: 'Pao', meaning: 'Quả pao thổ cẩm tung ném giao duyên nam nữ' },
     { native: 'Tù lu', meaning: 'Con cù gỗ rừng nặng thi đấu quay tít trên sân' },
   ];

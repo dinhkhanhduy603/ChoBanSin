@@ -96,22 +96,22 @@ function groundedSearchInDisan(question: string, records: any[]) {
     if ((qLower.includes('thắng cố') || qLower.includes('kuô cháo') || qLower.includes('ngựa') || qLower.includes('gia vị')) && name.includes('thắng cố')) {
       score += 30;
     }
-    if ((qLower.includes('mèn mén') || qLower.includes('mảng gâu') || qLower.includes('cơm ngô') || qLower.includes('đồ lửa') || qLower.includes('chõ')) && name.includes('mèn mén')) {
+    if ((qLower.includes('mèn mén') || qLower.includes('Mov pob kws') || qLower.includes('cơm ngô') || qLower.includes('đồ lửa') || qLower.includes('chõ')) && name.includes('mèn mén')) {
       score += 30;
     }
-    if ((qLower.includes('bánh dày') || qLower.includes('pê pấu') || qLower.includes('giã')) && name.includes('bánh dày')) {
+    if ((qLower.includes('bánh dày') || qLower.includes('Ncuav') || qLower.includes('giã')) && name.includes('bánh dày')) {
       score += 30;
     }
-    if ((qLower.includes('rượu') || qLower.includes('lê khâu') || qLower.includes('men lá')) && name.includes('rượu')) {
+    if ((qLower.includes('rượu') || qLower.includes('Cawv') || qLower.includes('men lá')) && name.includes('rượu')) {
       score += 30;
     }
-    if ((qLower.includes('váy') || qLower.includes('lanh') || qLower.includes('sáp ong') || qLower.includes('chàm') || qLower.includes('keng hmongz') || qLower.includes('thêu')) && name.includes('váy lanh')) {
+    if ((qLower.includes('váy') || qLower.includes('lanh') || qLower.includes('sáp ong') || qLower.includes('chàm') || qLower.includes('tiab') || qLower.includes('thêu')) && name.includes('váy lanh')) {
       score += 30;
     }
-    if ((qLower.includes('khèn') || qLower.includes('keng') || qLower.includes('múa khèn')) && name.includes('khèn')) {
+    if ((qLower.includes('khèn') || qLower.includes('qeej') || qLower.includes('kềnh') || qLower.includes('múa khèn')) && name.includes('khèn')) {
       score += 30;
     }
-    if ((qLower.includes('thổi lá') || qLower.includes('hắt xơ la') || qLower.includes('ngậm lá')) && name.includes('thổi lá')) {
+    if ((qLower.includes('thổi lá') || qLower.includes('Tshuab nplooj') || qLower.includes('ngậm lá')) && name.includes('thổi lá')) {
       score += 30;
     }
     if ((qLower.includes('pao') || qLower.includes('ném pao')) && name.includes('pao')) {
@@ -123,7 +123,7 @@ function groundedSearchInDisan(question: string, records: any[]) {
     if ((qLower.includes('bạc') || qLower.includes('xoóng') || qLower.includes('trang sức')) && name.includes('bạc')) {
       score += 30;
     }
-    if ((qLower.includes('hảng a xà') || qLower.includes('trưởng bản') || qLower.includes('mô hình') || qLower.includes('asean') || qLower.includes('tiên phong')) && (name.includes('hảng a xà') || informant.includes('hảng a xà') || desc.includes('hảng a xà'))) {
+    if ((qLower.includes('vàng a chỉnh') || qLower.includes('trưởng bản') || qLower.includes('mô hình') || qLower.includes('asean') || qLower.includes('tiên phong') || qLower.includes('htx') || qLower.includes('trái tim sin suối hồ')) && (name.includes('vàng a chỉnh') || native.includes('vàng a chỉnh') || informant.includes('vàng a chỉnh') || desc.includes('vàng a chỉnh'))) {
       score += 30;
     }
 

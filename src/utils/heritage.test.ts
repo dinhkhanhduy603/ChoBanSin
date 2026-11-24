@@ -7,7 +7,7 @@ const sampleItems: HeritageItem[] = [
   {
     id: 'test-1',
     ten_theo_danh_muc: 'Ẩm thực Thắng cố ngựa truyền thống',
-    ten_goi_ban_dia: 'Kuô cháo / Kuô cháo ngựa',
+    ten_goi_ban_dia: 'thắng cố',
     thuc_hanh_di_san: 'Tri thức dân gian về ẩm thực truyền thống',
     vung_van_hoa: 'Vùng văn hóa Tây Bắc',
     dan_toc: "H'Mông",
@@ -22,7 +22,7 @@ const sampleItems: HeritageItem[] = [
   {
     id: 'test-2',
     ten_theo_danh_muc: 'Váy lanh thổ cẩm vẽ sáp ong H\'Mông Đen',
-    ten_goi_ban_dia: 'Keng hmongz',
+    ten_goi_ban_dia: 'Tiab / Tiab Hmoob',
     thuc_hanh_di_san: 'Nghề thủ công dệt lanh vẽ sáp ong',
     vung_van_hoa: 'Vùng văn hóa Tây Bắc',
     dan_toc: "H'Mông",
@@ -61,7 +61,7 @@ test('filterHeritageItems filters by search keyword case-insensitively', () => {
   assert.equal(resultThangCo.length, 1);
   assert.equal(resultThangCo[0].id, 'test-1');
 
-  const resultLocalName = filterHeritageItems(sampleItems, 'Kuô cháo');
+  const resultLocalName = filterHeritageItems(sampleItems, 'thắng cố');
   assert.equal(resultLocalName.length, 1);
   assert.equal(resultLocalName[0].id, 'test-1');
 

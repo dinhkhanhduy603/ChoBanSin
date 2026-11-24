@@ -46,8 +46,8 @@ export const QAScreen: React.FC = () => {
     'Chợ phiên Sin Suối Hồ họp vào thời gian nào và có những phân khu nào?',
     'Món Thắng cố ngựa truyền thống nấu với những gia vị gì đặc trưng?',
     'Kỹ thuật vẽ sáp ong và nhuộm chàm váy lanh H\'Mông Đen được thực hiện thế nào?',
-    'Món cơm ngô Mèn mén (Mảng gâu) được chế biến qua mấy lần đồ lửa?',
-    'Trưởng bản Hảng A Xà có đóng góp gì trong mô hình bảo tồn bản văn hóa?',
+    'Món cơm ngô Mèn mén (Mov pob kws) được chế biến qua mấy lần đồ lửa?',
+    'Trưởng bản Vàng A Chỉnh có đóng góp gì trong mô hình bảo tồn bản văn hóa?',
     'Lễ hội Lồng Tồng của người Tày diễn ra thế nào? (Kiểm tra không bịa thông tin)',
   ];
 
