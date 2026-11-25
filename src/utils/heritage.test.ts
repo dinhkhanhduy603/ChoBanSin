@@ -88,3 +88,21 @@ test('createEmptyHeritageRecord returns proper skeleton', () => {
   assert.equal(emptyRec.dan_toc, "H'Mông");
   assert.equal(emptyRec.vung_van_hoa, 'Vùng văn hóa Tây Bắc');
 });
+
+test('getCategoryFromItem classifies real disan.json records accurately (ds-11 is nguoi_gin_giu)', async () => {
+  const { default: disanData } = await import('../data/disan.json');
+  const byId = new Map((disanData as HeritageItem[]).map((item) => [item.id, item]));
+
+  assert.equal(getCategoryFromItem(byId.get('ds-01')!), 'khong_gian');
+  assert.equal(getCategoryFromItem(byId.get('ds-02')!), 'am_thuc');
+  assert.equal(getCategoryFromItem(byId.get('ds-03')!), 'am_thuc');
+  assert.equal(getCategoryFromItem(byId.get('ds-04')!), 'am_thuc');
+  assert.equal(getCategoryFromItem(byId.get('ds-05')!), 'am_thuc');
+  assert.equal(getCategoryFromItem(byId.get('ds-06')!), 'trang_phuc');
+  assert.equal(getCategoryFromItem(byId.get('ds-07')!), 'nghe_thuat');
+  assert.equal(getCategoryFromItem(byId.get('ds-08')!), 'nghe_thuat');
+  assert.equal(getCategoryFromItem(byId.get('ds-09')!), 'nghe_thuat');
+  assert.equal(getCategoryFromItem(byId.get('ds-10')!), 'nghe_thuat');
+  assert.equal(getCategoryFromItem(byId.get('ds-11')!), 'nguoi_gin_giu');
+  assert.equal(getCategoryFromItem(byId.get('ds-12')!), 'trang_phuc');
+});

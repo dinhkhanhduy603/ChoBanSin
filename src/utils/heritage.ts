@@ -2,24 +2,30 @@ import type { HeritageCategory, HeritageItem } from '../types/disan';
 
 export function getCategoryFromItem(item: HeritageItem): HeritageCategory {
   if (item.loai_hinh) return item.loai_hinh;
-  const text = `${item.ten_theo_danh_muc} ${item.thuc_hanh_di_san} ${item.mo_ta}`.toLowerCase();
-  
-  if (text.includes('ẩm thực') || text.includes('thắng cố') || text.includes('mèn mén') || text.includes('bánh dày') || text.includes('rượu')) {
-    return 'am_thuc';
-  }
-  if (text.includes('trang phục') || text.includes('váy') || text.includes('thổ cẩm') || text.includes('lanh') || text.includes('bạc') || text.includes('sáp ong')) {
-    return 'trang_phuc';
-  }
-  if (text.includes('khèn') || text.includes('thổi lá') || text.includes('pao') || text.includes('tù lu') || text.includes('nghệ thuật') || text.includes('trò chơi')) {
-    return 'nghe_thuat';
-  }
-  if (text.includes('người gìn giữ') || text.includes('trưởng bản') || text.includes('nghệ nhân') || text.includes('tiên phong')) {
-    return 'nguoi_gin_giu';
-  }
-  if (text.includes('chợ phiên') || text.includes('không gian') || text.includes('lịch họp')) {
-    return 'khong_gian';
-  }
-  return 'khong_gian';
+
+  const primaryText = `${item.ten_theo_danh_muc} ${item.ten_goi_ban_dia} ${item.thuc_hanh_di_san}`.toLowerCase();
+  const fullText = `${primaryText} ${item.mo_ta}`.toLowerCase();
+
+  const matchCategory = (text: string): HeritageCategory | null => {
+    if (text.includes('người gìn giữ') || text.includes('trưởng bản') || text.includes('tiên phong')) {
+      return 'nguoi_gin_giu';
+    }
+    if (text.includes('không gian sinh hoạt') || text.includes('không gian chợ') || text.includes('lịch họp')) {
+      return 'khong_gian';
+    }
+    if (text.includes('khèn') || text.includes('thổi lá') || text.includes('pao') || text.includes('tù lu') || text.includes('trò chơi') || text.includes('nghệ thuật trình diễn')) {
+      return 'nghe_thuat';
+    }
+    if (text.includes('trang phục') || text.includes('váy') || text.includes('thổ cẩm') || text.includes('lanh') || text.includes('bạc') || text.includes('sáp ong') || text.includes('trang sức')) {
+      return 'trang_phuc';
+    }
+    if (text.includes('ẩm thực') || text.includes('thắng cố') || text.includes('mèn mén') || text.includes('bánh dày') || text.includes('rượu') || text.includes('lương thực')) {
+      return 'am_thuc';
+    }
+    return null;
+  };
+
+  return matchCategory(primaryText) ?? matchCategory(fullText) ?? 'khong_gian';
 }
 
 export const CATEGORY_LABELS: Record<HeritageCategory, { title: string; desc: string; icon: string }> = {
