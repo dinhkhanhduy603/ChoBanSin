@@ -42,7 +42,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
 
   const sampleHighlights = [
     {
-      title: 'Lịch họp Chợ phiên',
+      title: 'Không gian sinh hoạt Chợ',
       native: 'Kiab khw',
       desc: 'Họp định kỳ vào mỗi sáng thứ Bảy hàng tuần từ 5h30 sáng đến trưa tại trung tâm bản.',
       category: 'khong_gian' as const,
@@ -58,7 +58,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
       tag: 'Ẩm thực linh hồn',
     },
     {
-      title: 'Váy lanh vẽ sáp ong',
+      title: 'Váy lanh thổ cẩm vẽ sáp ong',
       native: 'Tiab / Tiab Hmoob',
       desc: 'Sợi lanh tự nhiên vẽ họa tiết kỷ hà bằng sáp ong rừng, nhuộm chàm nhiều lần công phu.',
       category: 'trang_phuc' as const,
@@ -66,7 +66,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
       tag: 'Kỹ nghệ thủ công',
     },
     {
-      title: 'Điệu Khèn gọi bạn tình',
+      title: 'Nghệ thuật trình diễn Khèn',
       native: 'Qeej / Kềnh',
       desc: 'Tiếng khèn 6 ống trúc réo rắt ngân vang cùng những bước múa điêu luyện giữa hội chợ.',
       category: 'nghe_thuat' as const,
