@@ -43,7 +43,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
   const sampleHighlights = [
     {
       title: 'Lịch họp Chợ phiên',
-      native: 'Tỳ hảng tảy (Họp sáng thứ Bảy)',
+      native: 'Kiab khw',
       desc: 'Họp định kỳ vào mỗi sáng thứ Bảy hàng tuần từ 5h30 sáng đến trưa tại trung tâm bản.',
       category: 'khong_gian' as const,
       icon: <Calendar className="w-5 h-5 text-amber-500" />,
